@@ -84,7 +84,29 @@ void CancellaLibro(Biblioteca biblioteca[])
 }
 void RicercaLibro()
 {
-    
+    cout<<"Digitare Codice ISBN: ";
+    cin>>stringa;
+    for(i=0;i<N;i++)
+    {
+        if(stringa==biblioteca[i].codiceISBN)
+        {
+            cout<<"----- LIBRO"<<endl;
+            cout<<" | Codice ISBN: "<<biblioteca[i].codiceISBN<<endl;
+            cout<<" | Titolo: "<<biblioteca[i].titolo<<endl;
+            cout<<" | Autore: "<<biblioteca[i].autore<<endl;
+            cout<<" | Editore: "<<biblioteca[i].editore<<endl;
+            cout<<" | Anno di Pubblicazione: "<<biblioteca[i].anno_pub<<endl;
+            cout<<" | Prezzo: "<<biblioteca[i].prezzo<<endl;
+            cout<<endl;
+        }
+        else
+        {
+            if(i==N-1)
+            {
+                cout<<"Libro Inesistente"<<endl;
+            }
+        }
+    }
 }
 void ModificaLibro()
 {
