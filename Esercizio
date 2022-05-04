@@ -9,3 +9,27 @@ struct Biblioteca
     float prezzo;
 }
 int i=0, N=0;
+//funzioni
+void InserisciLibro()
+{
+      
+}
+void VisualizzaCatalogo(Biblioteca biblioteca[])
+{
+    for(i=0;i<N;i++)
+    {
+        
+    }
+}
+void CancellaLibro()
+{
+    
+}
+void RicercaLibro()
+{
+    
+}
+void ModificaLibro()
+{
+    
+}
