@@ -102,7 +102,47 @@ void RicercaLibro()
         }
     }
 }
-void ModificaLibro()
+void ModificaLibro(Biblioteca biblioteca[])
 {
-    
+    cout<<"Digitare Codice ISBN: ";
+    cin>>stringa;
+    for(i=0;i<N;i++)
+    {
+        if(stringa==biblioteca[i].codiceISBN)
+        {
+            cout<<"----- MODIFICA"<<endl;
+            cout<<"Nuovo Codice ISBN: ";
+            cin>>biblioteca[i].codiceISBN;
+            cout<<endl;
+            cout<<"Nuovo Titolo: ";
+            cin>>biblioteca[i].titolo;
+            cout<<endl;
+            cout<<"Nuovo Autore: ";
+            cin>>biblioteca[i].autore;
+            cout<<endl;
+            cout<<"Nuovo Editore: ";
+            cin>>biblioteca[i].editore;
+            cout<<endl;
+            cout<<"Anno di Pubblicazione: ";
+            cin>>biblioteca[i].anno_pub;
+            cout<<endl;
+            cout<<"Nuovo Prezzo: ";
+            cin>>biblioteca[i].prezzo;
+            cout<<endl<<"Libro Modificato!"<<endl;
+        }
+        else
+        {
+            if(i==N-1)
+            {
+                cout<<"Libro non trovato"<<endl;
+            }
+        }
+    }
+}
+
+//main
+
+int main()
+{
+    return 0;
 }
