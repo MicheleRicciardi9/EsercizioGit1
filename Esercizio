@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 //dichiarazioni
@@ -54,11 +55,12 @@ void CancellaLibro(Biblioteca biblioteca[])
             cin>>scelta;
             if(scelta=="s")
             {
-                for(int j=i+1;j<N;j++)
+                for(int j=;j<N;j++)
                 {
-                    biblioteca[i]=biblioteca[j];
+                    biblioteca[j]=biblioteca[j+1];
                 }
                 cout<<"Libro cancellato"<<endl;
+                N=N-1;
             }
         }
     }
@@ -67,9 +69,9 @@ void RicercaLibro(Biblioteca biblioteca[])
 {
     cout<<"Digitare Codice ISBN: ";
     cin>>stringa;
-    if(stringa==biblioteca[i].codiceISBN)
+    for(i=0;i<N;i++)
     {
-        for(i=0;i<N;i++)
+        if(stringa==biblioteca[i].codiceISBN)
         {
             cout<<"----- LIBRO"<<endl;
             cout<<" | Codice ISBN: "<<biblioteca[i].codiceISBN<<endl;
@@ -81,18 +83,14 @@ void RicercaLibro(Biblioteca biblioteca[])
             cout<<endl;
         }
     }
-    else
-    {
-        cout<<"Libro Inesistente"<<endl;
-    }
 }
 void ModificaLibro(Biblioteca biblioteca[])
 {
     cout<<"Digitare Codice ISBN: ";
     cin>>stringa;
-    if(stringa==biblioteca[i].codiceISBN)
+    for(i=0;i<N;i++)
     {
-        for(i=0;i<N;i++)
+        if(stringa==biblioteca[i].codiceISBN)
         {
             cout<<"----- MODIFICA"<<endl;
             cout<<"Nuovo Codice ISBN: ";
@@ -114,10 +112,10 @@ void ModificaLibro(Biblioteca biblioteca[])
             cin>>biblioteca[i].prezzo;
             cout<<endl<<"Libro Modificato!"<<endl;
         }
-    }
-    else
-    {
-        cout<<"Libro non trovato"<<endl;
+        else
+        {
+            cout<<"Libro non trovato"<<endl;
+        }
     }
 }
 
@@ -166,7 +164,7 @@ int main()
             cout<<endl;
         }
     }
-    while(selezione<6);
+    while(selezione!=6);
 
     return 0;
 }
