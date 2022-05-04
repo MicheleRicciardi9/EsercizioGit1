@@ -106,9 +106,9 @@ void ModificaLibro(Biblioteca biblioteca[])
 {
     cout<<"Digitare Codice ISBN: ";
     cin>>stringa;
-    for(i=0;i<N;i++)
+    if(stringa==biblioteca[i].codiceISBN)
     {
-        if(stringa==biblioteca[i].codiceISBN)
+        for(i=0;i<N;i++)
         {
             cout<<"----- MODIFICA"<<endl;
             cout<<"Nuovo Codice ISBN: ";
@@ -130,13 +130,10 @@ void ModificaLibro(Biblioteca biblioteca[])
             cin>>biblioteca[i].prezzo;
             cout<<endl<<"Libro Modificato!"<<endl;
         }
-        else
-        {
-            if(i==N-1)
-            {
-                cout<<"Libro non trovato"<<endl;
-            }
-        }
+    }
+    else
+    {
+        cout<<"Libro non trovato"<<endl;
     }
 }
 
