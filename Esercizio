@@ -2,6 +2,25 @@
 #include <string>
 
 using namespace std;
+
+    /*! \mainpage <CENTER> ESERCIZIO GITHUB - TPSIT </CENTER>
+    * \author <B> Michele Ricciardi </B>
+    * \version <B> V1.0 </B>
+    * \date <B> Consegna progetto: 04/05/2022 </B>
+    *
+    * \section INFORMAZIONI FUNZIONALITÀ DEL PROGETTO
+    *
+    * - Inserimento di un Libro al catalogo della Biblioteca
+    * - Visualizzazione del Catalogo
+    * - Cancellazione di un Libro dal catalogo
+    * - Ricerca di un determinato Libro e le sue informazioni
+    * - Modifica delle informazione di un Libro
+    *
+    *\section CLASS DIAGRAMMA DELLE CLASSI DEL PROGETTO
+    * <IMG SRC = "EsercizioGit_CASI_D'USO_IMMAGINE.png" ALT = "Diagramma delle Classi del progetto"/>
+    *
+    */
+
 //dichiarazioni
 struct Biblioteca
 {
@@ -123,6 +142,7 @@ void ModificaLibro(Biblioteca biblioteca[])
 
 int main()
 {
+    //! \brief MAIN del Progetto
     Biblioteca biblioteca[100];
     cout<<" BENVENUTO!"<<endl;
     int selezione;
