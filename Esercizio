@@ -10,9 +10,22 @@ struct Biblioteca
 }
 int i=0, N=0;
 //funzioni
-void InserisciLibro()
+void InserisciLibro(Biblioteca biblioteca[])
 {
-      
+    cout<<"Codice ISBN"<<endl;
+    cin>>biblioteca[i].codiceISBN;
+    cout<<"Titolo"<<endl;
+    cin>>biblioteca[i].titolo;
+    cout<<"Autore"<<endl;
+    cin>>biblioteca[i].autore;
+    cout<<"Editore"<<endl;
+    cin>>biblioteca[i].editore;
+    cout<<"Anno di Pubblicazione'"<<endl;
+    cin>>biblioteca[i].anno_pub;
+    cout<<"Prezzo"<<endl;
+    cin>>biblioteca[i].prezzo;
+    i++;
+    N=i;  
 }
 void VisualizzaCatalogo(Biblioteca biblioteca[])
 {
