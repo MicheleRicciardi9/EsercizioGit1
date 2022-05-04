@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//dichiarazioni
 struct Biblioteca
 {
     string codiceISBN, titolo, autore, editore, anno_pub, prezzo;
