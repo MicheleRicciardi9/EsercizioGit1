@@ -16,8 +16,8 @@ using namespace std;
     * - Ricerca di un determinato Libro e le sue informazioni
     * - Modifica delle informazione di un Libro
     *
-    *\section CLASS DIAGRAMMA DELLE CLASSI DEL PROGETTO
-    * <IMG SRC = "EsercizioGit_CASI_D'USO_IMMAGINE.png" ALT = "Diagramma delle Classi del progetto"/>
+    *\section UML DIAGRAMMA UML DEL PROGETTO
+    * <IMG SRC = "EsercizioGit_CASI_D'USO_IMMAGINE.png" ALT = "Diagramma Casi d'uso del progetto"/>
     *
     */
 
