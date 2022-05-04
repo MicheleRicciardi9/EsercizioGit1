@@ -54,24 +54,11 @@ void CancellaLibro(Biblioteca biblioteca[])
             cin>>scelta;
             if(scelta=="s")
             {
-                biblioteca[i].codiceISBN="";
-                biblioteca[i].titolo="";
-                biblioteca[i].autore="";
-                biblioteca[i].editore="";
-                biblioteca[i].anno_pub="";
-                biblioteca[i].prezzo="";
                 for(int j=i+1;j<N;j++)
                 {
                     biblioteca[i]=biblioteca[j];
                 }
                 cout<<"Libro cancellato"<<endl;
-            }
-        }
-        else
-        {
-            if(i==N-1)
-            {
-                cout<<"Libro Inesistente"<<endl;
             }
         }
     }
