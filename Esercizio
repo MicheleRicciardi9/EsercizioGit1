@@ -4,9 +4,10 @@ using namespace std;
 
 struct Biblioteca
 {
-    string codiceISBN, titolo, autore, editore, anno_pub, prezzo, stringa="", scelta="";
+    string codiceISBN, titolo, autore, editore, anno_pub, prezzo;
 };
 int i=0, N=0;
+string stringa="", scelta="";
 //funzioni
 void InserisciLibro(Biblioteca biblioteca[])
 {
