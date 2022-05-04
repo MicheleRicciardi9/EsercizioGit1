@@ -138,5 +138,48 @@ void ModificaLibro(Biblioteca biblioteca[])
 
 int main()
 {
+    Biblioteca biblioteca[100];
+    cout<<" BENVENUTO!"<<endl;
+    int selezione;
+    do
+    {
+        cout<<"---------- MENU della BIBLIOTECA"<<endl;
+        cout<<" | 1 - Inserisci Nuovo Libro"<<endl;
+        cout<<" | 2 - Visualizza CatalogO"<<endl;
+        cout<<" | 3 - Cancella Libro"<<endl;
+        cout<<" | 4 - Ricerca Libro"<<endl;
+        cout<<" | 5 - Modifica Libro"<<endl;
+        cout<<" | 6 - Esci dal Menu"<<endl<<endl;
+        cout<<" - ";
+        cin>>selezione;
+
+        if(selezione==1)
+        {
+            InserisciLibro(biblioteca);
+            cout<<endl;
+        }
+        else if(selezione==2)
+        {
+            VisualizzaCatalogo(biblioteca);
+            cout<<endl;
+        }
+        else if(selezione==3)
+        {
+            CancellaLibro(biblioteca);
+            cout<<endl;
+        }
+        else if(selezione==4)
+        {
+            RicercaLibro(biblioteca);
+            cout<<endl;
+        }
+        else if(selezione==5)
+        {
+            ModificaLibro(biblioteca);
+            cout<<endl;
+        }
+    }
+    while(selezione<6);
+
     return 0;
 }
