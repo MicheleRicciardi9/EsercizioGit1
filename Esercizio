@@ -8,7 +8,7 @@ using namespace std;
     * \version <B> V1.0 </B>
     * \date <B> Consegna progetto: 04/05/2022 </B>
     *
-    * \section INFORMAZIONI FUNZIONALITÀ DEL PROGETTO
+    * \section INFORMAZIONI CARATTERISTICHE DEL PROGETTO
     *
     * - Inserimento di un Libro al catalogo della Biblioteca
     * - Visualizzazione del Catalogo
