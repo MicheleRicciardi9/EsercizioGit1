@@ -76,13 +76,13 @@ void CancellaLibro(Biblioteca biblioteca[])
         }
     }
 }
-void RicercaLibro()
+void RicercaLibro(Biblioteca biblioteca[])
 {
     cout<<"Digitare Codice ISBN: ";
     cin>>stringa;
-    for(i=0;i<N;i++)
+    if(stringa==biblioteca[i].codiceISBN)
     {
-        if(stringa==biblioteca[i].codiceISBN)
+        for(i=0;i<N;i++)
         {
             cout<<"----- LIBRO"<<endl;
             cout<<" | Codice ISBN: "<<biblioteca[i].codiceISBN<<endl;
@@ -93,13 +93,10 @@ void RicercaLibro()
             cout<<" | Prezzo: "<<biblioteca[i].prezzo<<endl;
             cout<<endl;
         }
-        else
-        {
-            if(i==N-1)
-            {
-                cout<<"Libro Inesistente"<<endl;
-            }
-        }
+    }
+    else
+    {
+        cout<<"Libro Inesistente"<<endl;
     }
 }
 void ModificaLibro(Biblioteca biblioteca[])
